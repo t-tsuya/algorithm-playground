@@ -23,11 +23,11 @@ int main() {
     copy(ar.begin(), ar.end(), ostream_iterator<int>(cout));
     clock_t end2 = clock();
 
-    // time with for loop
+
     cout << endl;
     cout << "length: 100000" << endl;
+    // time with for loop
     cout << "time (for loop): " << (double)(end1 - start1) << "sec." << endl;
-
     // time with ostream_iterator
     cout << "time (ostream_iterator): " << (double)(end2 - start2) << "sec." << endl;
 }
